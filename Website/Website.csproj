@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{242C9E1B-2388-4BEE-BE3E-ED646BAAFF7E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EnvironmentalMonitor.Website</RootNamespace>
+    <AssemblyName>EnvironmentalMonitor.Website</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Library\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Debugs\Default.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Environmentals\Detectors\Delete.aspx" />
+    <Content Include="Environmentals\Detectors\Insert.aspx" />
+    <Content Include="Environmentals\Detectors\Update.aspx" />
+    <Content Include="Environmentals\DetectorTypes\Delete.aspx" />
+    <Content Include="Environmentals\DetectorTypes\Insert.aspx" />
+    <Content Include="Environmentals\DetectorTypes\Update.aspx" />
+    <Content Include="Environmentals\Machines\Delete.aspx" />
+    <Content Include="Environmentals\Machines\Insert.aspx" />
+    <Content Include="Environmentals\Machines\SetupAlarm.aspx" />
+    <Content Include="Environmentals\Machines\SetupIp.aspx" />
+    <Content Include="Environmentals\Machines\SetupMac.aspx" />
+    <Content Include="Environmentals\Machines\Update.aspx" />
+    <Content Include="Environmentals\Monitors\FloorPlan.aspx" />
+    <Content Include="Environmentals\Monitors\FloorPlanLoadJson.aspx" />
+    <Content Include="Environmentals\Monitors\FloorPlanSaveJson.aspx" />
+    <Content Include="Environmentals\Monitors\Realtime.aspx" />
+    <Content Include="Environmentals\Monitors\RealtimeLoadJson.aspx" />
+    <Content Include="Environmentals\Monitors\Refresh.aspx" />
+    <Content Include="Environmentals\Querys\Default.aspx" />
+    <Content Include="Environmentals\Rooms\Delete.aspx" />
+    <Content Include="Environmentals\Rooms\Insert.aspx" />
+    <Content Include="Environmentals\Rooms\Update.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Manages\Defaults\BackupDatabase.aspx" />
+    <Content Include="Manages\Defaults\Log.aspx" />
+    <Content Include="Manages\Users\ChangePassword.aspx" />
+    <Content Include="Messages\FatalError.aspx" />
+    <Content Include="Manages\Defaults\About.aspx" />
+    <Content Include="Manages\Users\Delete.aspx" />
+    <Content Include="Manages\Users\Insert.aspx" />
+    <Content Include="Manages\Users\Login.aspx" />
+    <Content Include="Manages\Users\Logout.aspx" />
+    <Content Include="Manages\Users\Update.aspx" />
+    <Content Include="Messages\VerifyFalse.aspx" />
+    <Content Include="Resources\Databases\em.mdb" />
+    <Content Include="Resources\Images\default.wav" />
+    <Content Include="Resources\Images\User_Login_Background.jpg" />
+    <Content Include="Resources\Javascripts\custom\global.css" />
+    <Content Include="Resources\Javascripts\custom\global.js" />
+    <Content Include="Resources\Javascripts\custom\images\bg-blue-header-popup-head.png" />
+    <Content Include="Resources\Javascripts\jQuery\dropmenu\dropmenu.css" />
+    <Content Include="Resources\Javascripts\jQuery\dropmenu\dropmenu.js" />
+    <Content Include="Resources\Javascripts\jQuery\dropmenu\images\arrow_hover.png" />
+    <Content Include="Resources\Javascripts\jQuery\dropmenu\images\arrow_up.png" />
+    <Content Include="Resources\Javascripts\jQuery\dropmenu\images\gradient.png" />
+    <Content Include="Resources\Javascripts\jQuery\dropmenu\images\navigation.png" />
+    <Content Include="Resources\Javascripts\jQuery\jquery-1.8.3.js" />
+    <Content Include="Resources\Javascripts\jQuery\ui\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Resources\Javascripts\jQuery\ui\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Resources\Javascripts\jQuery\ui\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Resources\Javascripts\jQuery\ui\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Resources\Javascripts\jQuery\ui\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Resources\Javascripts\jQuery\ui\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Resources\Javascripts\jQuery\ui\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Resources\Javascripts\jQuery\ui\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Resources\Javascripts\jQuery\ui\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Resources\Javascripts\jQuery\ui\images\ui-icons_222222_256x240.png" />
+    <Content Include="Resources\Javascripts\jQuery\ui\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Resources\Javascripts\jQuery\ui\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Resources\Javascripts\jQuery\ui\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Resources\Javascripts\jQuery\ui\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Resources\Javascripts\jQuery\ui\jquery-ui-1.8.24.custom.css" />
+    <Content Include="Resources\Javascripts\jQuery\ui\jquery-ui-1.8.24.custom.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstracts\AbstractPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Abstracts\AbstractSecurityPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Debugs\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Debugs\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Environmentals\Detectors\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Environmentals\Detectors\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Environmentals\Detectors\Insert.aspx.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Environmentals\Detectors\Insert.aspx.designer.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Environmentals\Detectors\Update.aspx.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Environmentals\Detectors\Update.aspx.designer.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Environmentals\DetectorTypes\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Environmentals\DetectorTypes\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Environmentals\DetectorTypes\Insert.aspx.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Environmentals\DetectorTypes\Insert.aspx.designer.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Environmentals\DetectorTypes\Update.aspx.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Environmentals\DetectorTypes\Update.aspx.designer.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Environmentals\Machines\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Environmentals\Machines\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Environmentals\Machines\Insert.aspx.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Environmentals\Machines\Insert.aspx.designer.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Environmentals\MachineSetup.cs" />
+    <Compile Include="Environmentals\Machines\SetupAlarm.aspx.cs">
+      <DependentUpon>SetupAlarm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Environmentals\Machines\SetupAlarm.aspx.designer.cs">
+      <DependentUpon>SetupAlarm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Environmentals\Machines\SetupIp.aspx.cs">
+      <DependentUpon>SetupIp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Environmentals\Machines\SetupIp.aspx.designer.cs">
+      <DependentUpon>SetupIp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Environmentals\Machines\SetupMac.aspx.cs">
+      <DependentUpon>SetupMac.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Environmentals\Machines\SetupMac.aspx.designer.cs">
+      <DependentUpon>SetupMac.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Environmentals\Machines\Update.aspx.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Environmentals\Machines\Update.aspx.designer.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Environmentals\Monitors\FloorPlan.aspx.cs">
+      <DependentUpon>FloorPlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Environmentals\Monitors\FloorPlan.aspx.designer.cs">
+      <DependentUpon>FloorPlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Environmentals\Monitors\FloorPlanLoadJson.aspx.cs">
+      <DependentUpon>FloorPlanLoadJson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Environmentals\Monitors\FloorPlanLoadJson.aspx.designer.cs">
+      <DependentUpon>FloorPlanLoadJson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Environmentals\Monitors\FloorPlanSaveJson.aspx.cs">
+      <DependentUpon>FloorPlanSaveJson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Environmentals\Monitors\FloorPlanSaveJson.aspx.designer.cs">
+      <DependentUpon>FloorPlanSaveJson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Environmentals\Monitors\Realtime.aspx.cs">
+      <DependentUpon>Realtime.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Environmentals\Monitors\Realtime.aspx.designer.cs">
+      <DependentUpon>Realtime.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Environmentals\Monitors\RealtimeLoadJson.aspx.cs">
+      <DependentUpon>RealtimeLoadJson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Environmentals\Monitors\RealtimeLoadJson.aspx.designer.cs">
+      <DependentUpon>RealtimeLoadJson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Environmentals\Monitors\Refresh.aspx.cs">
+      <DependentUpon>Refresh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Environmentals\Monitors\Refresh.aspx.designer.cs">
+      <DependentUpon>Refresh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Environmentals\Querys\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Environmentals\Querys\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Environmentals\Rooms\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Environmentals\Rooms\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Environmentals\Rooms\Insert.aspx.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Environmentals\Rooms\Insert.aspx.designer.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Environmentals\Rooms\Update.aspx.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Environmentals\Rooms\Update.aspx.designer.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Jsons\LoadJsonData.cs" />
+    <Compile Include="Jsons\SaveJsonData.cs" />
+    <Compile Include="Manages\Defaults\BackupDatabase.aspx.cs">
+      <DependentUpon>BackupDatabase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Defaults\BackupDatabase.aspx.designer.cs">
+      <DependentUpon>BackupDatabase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Defaults\Log.aspx.cs">
+      <DependentUpon>Log.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Defaults\Log.aspx.designer.cs">
+      <DependentUpon>Log.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Users\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Users\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Messages\FatalError.aspx.cs">
+      <DependentUpon>FatalError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Messages\FatalError.aspx.designer.cs">
+      <DependentUpon>FatalError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Defaults\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Defaults\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Users\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Users\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Users\Insert.aspx.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Users\Insert.aspx.designer.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Users\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Users\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Users\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Users\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manages\Users\Update.aspx.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manages\Users\Update.aspx.designer.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Messages\VerifyFalse.aspx.cs">
+      <DependentUpon>VerifyFalse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Messages\VerifyFalse.aspx.designer.cs">
+      <DependentUpon>VerifyFalse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Support\Business\Business.csproj">
+      <Project>{48D3D83D-6C3A-457E-A76F-7F8D34BF7147}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\Device\Device.csproj">
+      <Project>{E61C169D-A84D-4571-956E-499D10AD13DE}</Project>
+      <Name>Device</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\Instruction\Instruction.csproj">
+      <Project>{5D7D2E65-C291-490D-9BB2-D401EB9F6FC5}</Project>
+      <Name>Instruction</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\Module\Module.csproj">
+      <Project>{EAC67AA9-E143-4B22-BFBA-FA047FFB9047}</Project>
+      <Name>Module</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\Resource\Resource.csproj">
+      <Project>{9671915F-9294-42AB-8AED-B863F0DE2825}</Project>
+      <Name>Resource</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Parameter.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1049</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

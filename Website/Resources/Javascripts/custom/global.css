@@ -1,0 +1,106 @@
+﻿
+html, body
+{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    font-family: 微软雅黑, 新宋体, 宋体, Tahoma, Consolas, Courier New, Arial;
+    font-size: 12pt;
+}
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+tr
+{
+    height: 50px;
+}
+select
+{
+    width: 200px;
+    height: 30px;
+}
+input[type=text]
+{
+    width: 200px;
+    height: 30px;
+}
+input[type=password]
+{
+    width: 200px;
+    height: 30px;
+}
+input[type=file]
+{
+    width: 200px;
+    height: 30px;
+}
+input[type=submit]
+{
+    width: 100px;
+    height: 30px;
+    margin-right: 30px;
+}
+input[type=button]
+{
+    width: 100px;
+    height: 30px;
+    margin-right: 30px;
+}
+input[type=reset]
+{
+    width: 100px;
+    height: 30px;
+    margin-right: 30px;
+}
+
+.errorMessage
+{
+    color: #ff0000;
+}
+
+.containerTable
+{
+    padding: 30px 0px 0px 0px;
+    width: 100%;
+}
+
+.blue-header-popup
+{
+    margin: 0px auto;
+    text-align: left !important;
+}
+.blue-header-popup .header
+{
+    padding: 16px 26px 6px;
+    color: white;
+    background-image: url("images/bg-blue-header-popup-head.png");
+    background-repeat: repeat-x;
+    text-shadow: 0 1px 1px #000000;
+    -moz-text-shadow: 0 -1px 1px #000000;
+}
+.blue-header-popup .header h2
+{
+    line-height: 20px;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.blue-header-popup .content
+{
+    border-right-style: solid;
+    border-left-style: solid;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-right-color: #e6e6e6;
+    border-left-color: #e6e6e6;
+    background-color: #f9f9f9;
+}
+.blue-header-popup .footer
+{
+    background-color: #e6e6e6;
+    height: 60px;
+    line-height: 60px;
+    text-align: right;
+    vertical-align: middle;
+}

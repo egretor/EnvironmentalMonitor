@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="RealtimeLoadJson.aspx.cs" Inherits="EnvironmentalMonitor.Website.Environmentals.Monitors.RealtimeLoadJson" %>
