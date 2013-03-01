@@ -77,7 +77,7 @@ namespace EnvironmentalMonitor.Website.Abstracts
 
                     if (Variable.Debug && user.Prerogative)
                     {
-                        Catalog debugCatalog = new Catalog(UserModule.DEBUG_MODULE, "开发调试", string.Format("{0}Debugs/Default.aspx", EnvironmentalMonitor.Support.Resource.Variable.VirtualRootPath));
+                        Catalog debugCatalog = new Catalog(UserModule.DEVELOP_MODULE, "开发", string.Format("{0}Develops/Default.aspx", EnvironmentalMonitor.Support.Resource.Variable.VirtualRootPath));
                         catalogs.Add(debugCatalog);
                     }
 

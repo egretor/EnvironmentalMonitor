@@ -54,7 +54,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Debugs\Default.aspx" />
+    <Content Include="Develops\Default.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Environmentals\Detectors\Delete.aspx" />
     <Content Include="Environmentals\Detectors\Insert.aspx" />
@@ -134,11 +134,11 @@
     <Compile Include="Abstracts\AbstractSecurityPage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Debugs\Default.aspx.cs">
+    <Compile Include="Develops\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Debugs\Default.aspx.designer.cs">
+    <Compile Include="Develops\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">

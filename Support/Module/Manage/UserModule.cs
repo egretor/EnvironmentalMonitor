@@ -57,7 +57,7 @@ namespace EnvironmentalMonitor.Support.Module.Manage
         /// <summary>
         /// 调试模块
         /// </summary>
-        public const string DEBUG_MODULE = "m9901debug";
+        public const string DEVELOP_MODULE = "m9901debug";
 
         public static string[] Modules
         {
