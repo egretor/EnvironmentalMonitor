@@ -50,7 +50,7 @@ namespace EnvironmentalMonitor.Support.Instruction.In.Request
         {
             get
             {
-                return 0xAA02;
+                return 0xAA03;
             }
         }
 

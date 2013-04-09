@@ -77,7 +77,10 @@ namespace EnvironmentalMonitor.Website.Abstracts
 
                     if (Variable.Debug && user.Prerogative)
                     {
-                        Catalog debugCatalog = new Catalog(UserModule.DEVELOP_MODULE, "开发", string.Format("{0}Develops/Default.aspx", EnvironmentalMonitor.Support.Resource.Variable.VirtualRootPath));
+                        Catalog debugCatalog = new Catalog(UserModule.DEVELOP_MODULE, "开发", "#");
+                        debugCatalog.Catalogs = new List<Catalog>();
+                        debugCatalog.Catalogs.Add(new Catalog(UserModule.DEVELOP_MODULE, "模拟数据", string.Format("{0}Develops/Default.aspx", EnvironmentalMonitor.Support.Resource.Variable.VirtualRootPath)));
+                        debugCatalog.Catalogs.Add(new Catalog(UserModule.DEVELOP_MODULE, "指令", string.Format("{0}Develops/Instruction.aspx", EnvironmentalMonitor.Support.Resource.Variable.VirtualRootPath)));
                         catalogs.Add(debugCatalog);
                     }
 

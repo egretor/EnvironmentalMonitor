@@ -56,6 +56,7 @@
   <ItemGroup>
     <Content Include="Develops\Default.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="Develops\Instruction.aspx" />
     <Content Include="Environmentals\Detectors\Delete.aspx" />
     <Content Include="Environmentals\Detectors\Insert.aspx" />
     <Content Include="Environmentals\Detectors\Update.aspx" />
@@ -147,6 +148,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Develops\Instruction.aspx.cs">
+      <DependentUpon>Instruction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Develops\Instruction.aspx.designer.cs">
+      <DependentUpon>Instruction.aspx</DependentUpon>
     </Compile>
     <Compile Include="Environmentals\Detectors\Delete.aspx.cs">
       <DependentUpon>Delete.aspx</DependentUpon>
@@ -423,7 +431,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>1049</DevelopmentServerPort>
+          <DevelopmentServerPort>2400</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
